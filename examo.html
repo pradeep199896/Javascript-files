@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qiery  SElector</title>
+</head>
+<body>
+<main>
+    <form>
+        <label for="Check">Enter Date:</label>
+        <input id="Check" type="text" />
+        <button onclick="generateUsersDirectMessageThreads()">"Clickme"</button>
+    </form>
+</main>
+    <script>
+      const generateUsersDirectMessageThreads = (threadId, userId) => {
+ const createdAt = faker.date.past(2);
+ const lastActive = faker.date.between(createdAt, faker.date.recent());
+ const lastSeen = faker.date.between(createdAt, new Date());
+
+ return {
+  id: uuid(),
+  createdAt,
+  threadId,
+  userId,
+  lastActive,
+  lastSeen,
+  receiveNotifications: true,
+ };
+}
+
+        </script>
+</body>
+</html> 

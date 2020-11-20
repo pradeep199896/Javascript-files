@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>OBJECTS2</title>
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            let car={model:"254KJH",
+        cost:25000,
+    color:"BLACK",
+    working:function(){
+        return this;
+    }
+};
+car.working();
+    document.getElementById("demo").innerHTML=car.working();
+    </script>
+    </body>
+</html>

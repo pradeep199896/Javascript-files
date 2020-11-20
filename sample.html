@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <h1>Please login:</h1>
+    <form onsubmit="return myfuncr()" action="empty.html">
+    <input type="text" id="uname" placeholder="Username"/><br><br>
+    <input type="password" id="code" placeholder="password" required/><br><br>
+    <input type="submit"  value="Login" id="log">
+    </form>
+    <script>
+        function myfuncr(){
+            let x,y;
+            x=document.getElementById("uname").value;
+            y=document.getElementById("code").value;
+            if(x=="" || y=="")
+            {
+              alert("Please fill the fields");
+              return false;
+            }
+            else{
+return true;
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+Release-1:
+1:A closure is a nested function which has access to the variables and data of the outer function.But outer function cannot access inner variables and data.In simple way we can say that inner function as access to the scope of outer functon.
+2:i)Helps to hide variables data inside the inner function.
+  ii)It also helps to  not to terminate the scope of outer function.
+3:Modules can load each other and use special directives export and import to interchange functionality, call functions of one module from another one:
+export keyword labels variables and functions that should be accessible from outside the current module.
+import allows the import of functionality from other modules.
+4:Some objects in JavaScript look like an array, but they aren’t one. That usually means that they have indexed access and a length property, but none of the array methods. Examples include the special variable arguments, DOM node lists, and strings.
+5: Because the array is a type of object.

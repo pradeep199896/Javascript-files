@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check in range</title>
+</head>
+<body>
+<h2>Check the number in Range or Not?</h2>
+<input type="number" id="demo1"   min="100" max="300" required/>
+<button onclick="myfunc()" >Check</button> 
+<p id="demo3"></p>
+<script>
+   function myfunc(){
+       var obj=document.getElementById("demo1");
+       if(!obj.checkValidity())
+       {
+           document.getElementById("demo3").innerHTML=obj.validationMessage;
+       }
+       else{
+        document.getElementById("demo3").innerHTML="Input Ok";
+       }
+   } 
+  
+</script>
+</body>
+</html>

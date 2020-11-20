@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>JSONbasics</title>
+</head>
+<body>
+    <h1 id="demo">BASICS OF JSON</h1>
+    <script>
+        let obj1={
+            fname:"Banala",
+            lname:"Pradeep",
+            luck:"Bad",
+            age:function(){
+                return 21;
+            }
+        }
+        var arr=[{fname:"Banala",
+            lname:"Pradeep",
+            luck:"Bad",
+            age:function(){
+                return 21;
+            }},{fname:"praful",lname:"kumar",luck:"good",age:32}]
+        console.log(obj1);
+        var json=JSON.stringify(obj1);
+        var arj=JSON.stringify(arr);
+        console.log(arr)
+        console.log(arj);
+        console.log(json);
+        console.log(json.length);
+        console.log(json.replace("Bad","Shani"))
+        console.log(json.indexOf(":"))
+        let real1=JSON.parse(json);
+        let real2=JSON.parse(arj);
+        console.log(real1);
+        console.log(real2);
+    </script>
+    
+</body>
+</html>

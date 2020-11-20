@@ -1,0 +1,31 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Check any error</title>
+    </head>
+    <body>
+        <input type="text" id="demo"/>
+        <button  type="button" onclick=mufuc()>CHECK</button>
+        <p id="demo1"></p>
+        <script>
+            function mufuc()
+            {
+            var x;
+            x=document.getElementById("demo").value;
+            var message;
+            message=document.getElementById("demo1");
+            message.innerHTML="";
+                try{
+                    if(x=="") throw "enter something";
+                    if(isNaN(x)) throw "enter number";
+                    x=Number(x);
+                    if(x<5) throw "number is low";
+                    if(x>10) throw "numbre is high";
+                }
+                catch(err){
+                    message.innerHTML="error of"+err;
+                }
+            }
+            </script>
+    </body>
+</html>

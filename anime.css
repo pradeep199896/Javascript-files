@@ -1,0 +1,15 @@
+#big{
+   width:500px;
+   height:600px;
+   margin:25px;
+   border:1px solid white;
+   background-color:red;
+}
+#small{
+    width:20px;
+    height:20px;
+    background-color: yellow;
+}
+#butt{
+    margin-left:300px;
+}
